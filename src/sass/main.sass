@@ -1,0 +1,214 @@
+@font-face
+  font-family: "Karla"
+  src: url(../fonts/Karla-Bolditalic.ttf) format("truetype")
+  font-weight: Bold
+  font-style: italic
+
+@font-face
+  font-family: "Karla"
+  src: url(../fonts/Karla-Regular.ttf) format("truetype")
+  font-weight: normal
+
+@font-face
+  font-family: "Karla"
+  src: url(../fonts/Karla-Italic.ttf) format("truetype")
+  font-weight: normal
+  font-style: italic
+
+@font-face
+  font-family: "Karla"
+  src: url(../fonts/Karla-Bold.ttf) format("truetype")
+  font-weight: Bold
+
+*
+  padding: 0
+  margin: 0
+  font-family: Karla, sans-serif
+  font-weight: normal
+
+body
+  position: relative
+
+.chat-container
+  width: 350px
+  height: 650px
+  background: linear-gradient(49deg, rgba(0,143,227,1) 0%,rgba(0,143,227,1) 66%,rgba(0,160,255,1) 66%,rgba(0,160,255,1) 100%)
+  position: absolute
+  top: 0
+  left: 0
+
+
+/*******************************************************************************************
+/*ОКНО ЛОГИНА
+/*******************************************************************************************/
+.login
+  padding-top: 60px
+  height: 590px
+  img
+    position: absolute
+    top: 140px
+    left: 75px
+    z-index: 1
+
+h1
+  font-size: 100px
+  color: #fff
+  font-weight: bold
+  margin-bottom: 150px
+  position: relative
+  z-index: 2
+
+#form-login
+  background: #fff
+  width: 324px
+  height: 270px
+  margin-left: 13px
+  position: relative
+  z-index: 2
+  div
+    margin: 0 40px
+    padding-top: 40px
+    label
+      text-transform: uppercase
+      font-size: 11px
+      letter-spacing: 0.1em
+      color: #ad807d
+    #input-name
+      width: 245px
+      height: 40px
+      border: none
+      border-bottom: solid 1px
+      cursor: text
+  button
+    display: block
+    position: absolute
+    bottom: 0
+    border: none
+    padding: 20px 40px
+    width: 324px
+    cursor: pointer
+    background: #00a0ff
+    color: #fff
+    font-size: 13px
+    text-align: left
+    span
+     font-weight: bold
+     float: right
+
+.bottom-bg
+  width: 350px
+  height: 340px
+  position: absolute
+  z-index: 1
+  bottom: 0
+  background: #000
+  
+/*******************************************************************************************
+/* ОКНО ЧАТА
+/*******************************************************************************************/
+
+.chat
+  h2
+    background: #000
+    color: #fff
+    font-size: 17px
+    height: 36px
+    padding-top: 26px
+    padding-left: 20px
+    padding-right: 20px
+    text-align: center
+    .fa
+      display: inline-block
+      float: left
+    
+.date
+  text-align: center
+  color: #fff
+  font-size: 12px
+  margin: 24px 0
+  span
+    vertical-align: top
+    font-weight: bold
+
+.message-window
+  height: 450px
+
+.avatar
+  display: inline-block
+  width: 40px
+  height: 40px
+  min-width: 40px
+  background: #fff
+  font-size: 20px
+  color: #333
+  line-height: 40px
+  text-align: center
+  position: relative
+  z-index: 2
+
+.message
+  display: inline-block
+  max-width: 240px
+  min-width: 140px
+  padding: 20px
+  background: #fff
+  color: #333
+  font-size: 15px
+  box-shadow: 0 10px 20px 0 #555
+  position: relative
+  z-index: 1
+
+.income-message, .user-message
+  display: inline-flex
+  margin: 0 24px 26px 24px
+  position: relative
+  .time
+    margin-top: 15px
+    font-size: 11px
+    color: #d0b9b8
+    font-weight: bold
+
+.user-message
+  flex-direction: row-reverse
+  float: right
+  .avatar__shadow
+    right: 0
+  .time
+    float: right
+
+.avatar__shadow
+    display: inline-block
+    position: absolute
+    width: 40px
+    height: 40px
+    top: 0
+    z-index: 0
+    box-shadow: 0 10px 20px 0 #555
+
+.message-sender
+  height: 53px
+  position: absolute
+  bottom: 0
+  width: 350px
+  color: #fff
+  background: #000
+  .fa
+    display: inline-block
+    padding: 18px
+  input
+    border: none
+    color: #fff
+    background: #000
+    width: 200px
+    font-size: 15px
+  button
+    position: absolute
+    border-radius: 50%
+    width: 60px
+    height: 60px
+    padding: 22px
+    border: none
+    top: -30px
+    right: 25px
+    cursor: pointer
+    background: #ffbdb8
