@@ -130,7 +130,14 @@ h1 {
     font-weight: bold; }
 
 .message-window {
-  height: 450px; }
+  height: 450px;
+  overflow-y: scroll;
+  position: relative; }
+
+.message-feed {
+  position: relative;
+  bottom: 0;
+  height: auto; }
 
 .avatar {
   display: inline-block;
